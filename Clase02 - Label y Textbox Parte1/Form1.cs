@@ -16,5 +16,11 @@ namespace Clase02___Label_y_Textbox_Parte1
         {
             InitializeComponent();
         }
+
+        private void btnNombre_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tu te llamas: " + txtNombre.Text);
+            txtNombre.Text = "";
+        }
     }
 }
