@@ -16,5 +16,11 @@ namespace Clase01___Ventanas_Emergentes
         {
             InitializeComponent();
         }
+
+        private void btnMensaje_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Desea eliminar este archivo?", "Programacion IV",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+        }
     }
 }
