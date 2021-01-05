@@ -19,8 +19,8 @@ namespace Clase04___Listas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             //lstDepartamentos.SelectedIndex = 4;
-             //cmbDepartamentos.SelectedItem = "POTOSI";
+             lstDep.SelectedIndex = 4;
+             cmbDep.SelectedItem = "POTOSI";
         }
 
         private void btnComboBox_Click(object sender, EventArgs e)

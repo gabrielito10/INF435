@@ -57,6 +57,8 @@
             // cmbDep
             // 
             this.cmbDep.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDep.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDep.ForeColor = System.Drawing.Color.Aquamarine;
             this.cmbDep.FormattingEnabled = true;
             this.cmbDep.Items.AddRange(new object[] {
             "LA PAZ",
@@ -70,7 +72,7 @@
             "PANDO"});
             this.cmbDep.Location = new System.Drawing.Point(33, 51);
             this.cmbDep.Name = "cmbDep";
-            this.cmbDep.Size = new System.Drawing.Size(121, 21);
+            this.cmbDep.Size = new System.Drawing.Size(121, 30);
             this.cmbDep.TabIndex = 4;
             // 
             // lstDep
@@ -100,6 +102,7 @@
             this.Controls.Add(this.cmbDep);
             this.Controls.Add(this.btnLisBox);
             this.Controls.Add(this.btnComboBox);
+            this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
