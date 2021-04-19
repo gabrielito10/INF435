@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.opSoltero = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.opPerros = new System.Windows.Forms.CheckBox();
             this.opCasado = new System.Windows.Forms.RadioButton();
             this.opDivorciado = new System.Windows.Forms.RadioButton();
             this.opViudo = new System.Windows.Forms.RadioButton();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.opGatos = new System.Windows.Forms.CheckBox();
+            this.opAves = new System.Windows.Forms.CheckBox();
+            this.opPezcado = new System.Windows.Forms.CheckBox();
             this.btnEstadoCivil = new System.Windows.Forms.Button();
+            this.btnMascota = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // opSoltero
@@ -50,16 +51,16 @@
             this.opSoltero.Text = "Soltero";
             this.opSoltero.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // opPerros
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(234, 65);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(115, 24);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.opPerros.AutoSize = true;
+            this.opPerros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opPerros.Location = new System.Drawing.Point(234, 65);
+            this.opPerros.Name = "opPerros";
+            this.opPerros.Size = new System.Drawing.Size(80, 24);
+            this.opPerros.TabIndex = 1;
+            this.opPerros.Text = "Perros";
+            this.opPerros.UseVisualStyleBackColor = true;
             // 
             // opCasado
             // 
@@ -80,7 +81,6 @@
             this.opDivorciado.Name = "opDivorciado";
             this.opDivorciado.Size = new System.Drawing.Size(111, 24);
             this.opDivorciado.TabIndex = 3;
-            this.opDivorciado.TabStop = true;
             this.opDivorciado.Text = "Divorciado";
             this.opDivorciado.UseVisualStyleBackColor = true;
             // 
@@ -92,42 +92,41 @@
             this.opViudo.Name = "opViudo";
             this.opViudo.Size = new System.Drawing.Size(73, 24);
             this.opViudo.TabIndex = 4;
-            this.opViudo.TabStop = true;
             this.opViudo.Text = "Viudo";
             this.opViudo.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // opGatos
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(234, 106);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(115, 24);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.opGatos.AutoSize = true;
+            this.opGatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opGatos.Location = new System.Drawing.Point(234, 106);
+            this.opGatos.Name = "opGatos";
+            this.opGatos.Size = new System.Drawing.Size(77, 24);
+            this.opGatos.TabIndex = 5;
+            this.opGatos.Text = "Gatos";
+            this.opGatos.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // opAves
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(234, 147);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(115, 24);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.opAves.AutoSize = true;
+            this.opAves.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opAves.Location = new System.Drawing.Point(234, 147);
+            this.opAves.Name = "opAves";
+            this.opAves.Size = new System.Drawing.Size(67, 24);
+            this.opAves.TabIndex = 6;
+            this.opAves.Text = "Aves";
+            this.opAves.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // opPezcado
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(234, 185);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(115, 24);
-            this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.opPezcado.AutoSize = true;
+            this.opPezcado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opPezcado.Location = new System.Drawing.Point(234, 185);
+            this.opPezcado.Name = "opPezcado";
+            this.opPezcado.Size = new System.Drawing.Size(116, 24);
+            this.opPezcado.TabIndex = 7;
+            this.opPezcado.Text = "Pezcaditos";
+            this.opPezcado.UseVisualStyleBackColor = true;
             // 
             // btnEstadoCivil
             // 
@@ -139,19 +138,29 @@
             this.btnEstadoCivil.UseVisualStyleBackColor = true;
             this.btnEstadoCivil.Click += new System.EventHandler(this.btnEstadoCivil_Click);
             // 
+            // btnMascota
+            // 
+            this.btnMascota.Location = new System.Drawing.Point(234, 236);
+            this.btnMascota.Name = "btnMascota";
+            this.btnMascota.Size = new System.Drawing.Size(131, 45);
+            this.btnMascota.TabIndex = 9;
+            this.btnMascota.Text = "Mostrar";
+            this.btnMascota.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 293);
+            this.Controls.Add(this.btnMascota);
             this.Controls.Add(this.btnEstadoCivil);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.opPezcado);
+            this.Controls.Add(this.opAves);
+            this.Controls.Add(this.opGatos);
             this.Controls.Add(this.opViudo);
             this.Controls.Add(this.opDivorciado);
             this.Controls.Add(this.opCasado);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.opPerros);
             this.Controls.Add(this.opSoltero);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -164,14 +173,15 @@
         #endregion
 
         private System.Windows.Forms.RadioButton opSoltero;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox opPerros;
         private System.Windows.Forms.RadioButton opCasado;
         private System.Windows.Forms.RadioButton opDivorciado;
         private System.Windows.Forms.RadioButton opViudo;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox opGatos;
+        private System.Windows.Forms.CheckBox opAves;
+        private System.Windows.Forms.CheckBox opPezcado;
         private System.Windows.Forms.Button btnEstadoCivil;
+        private System.Windows.Forms.Button btnMascota;
     }
 }
 
