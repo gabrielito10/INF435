@@ -16,5 +16,14 @@ namespace _02Label_y_Entradas_de_Texto
         {
             InitializeComponent();
         }
+
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+            float a = float.Parse(txtNum1.Text.Replace(".",","));
+            float b = float.Parse(txtNum2.Text.Replace(".",","));
+            float res = a + b;
+            MessageBox.Show(res.ToString());
+        }
     }
 }
+
