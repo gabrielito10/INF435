@@ -54,6 +54,8 @@
             // opPerros
             // 
             this.opPerros.AutoSize = true;
+            this.opPerros.Checked = true;
+            this.opPerros.CheckState = System.Windows.Forms.CheckState.Checked;
             this.opPerros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opPerros.Location = new System.Drawing.Point(234, 65);
             this.opPerros.Name = "opPerros";
@@ -65,11 +67,13 @@
             // opCasado
             // 
             this.opCasado.AutoSize = true;
+            this.opCasado.Checked = true;
             this.opCasado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opCasado.Location = new System.Drawing.Point(58, 105);
             this.opCasado.Name = "opCasado";
             this.opCasado.Size = new System.Drawing.Size(88, 24);
             this.opCasado.TabIndex = 2;
+            this.opCasado.TabStop = true;
             this.opCasado.Text = "Casado";
             this.opCasado.UseVisualStyleBackColor = true;
             // 
@@ -98,6 +102,8 @@
             // opGatos
             // 
             this.opGatos.AutoSize = true;
+            this.opGatos.Checked = true;
+            this.opGatos.CheckState = System.Windows.Forms.CheckState.Checked;
             this.opGatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opGatos.Location = new System.Drawing.Point(234, 106);
             this.opGatos.Name = "opGatos";
@@ -146,6 +152,7 @@
             this.btnMascota.TabIndex = 9;
             this.btnMascota.Text = "Mostrar";
             this.btnMascota.UseVisualStyleBackColor = true;
+            this.btnMascota.Click += new System.EventHandler(this.btnMascota_Click);
             // 
             // Form1
             // 

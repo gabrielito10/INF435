@@ -28,5 +28,25 @@ namespace _03RadioButton_y_CheckBox
             if (opViudo.Checked)
                 MessageBox.Show("Ud. es viudo");
         }
+
+        private void btnMascota_Click(object sender, EventArgs e)
+        {
+            if (opPerros.Checked == false && opGatos.Checked == false &&
+                opAves.Checked == false && opPezcado.Checked == false)
+                MessageBox.Show("A ud. no le gusta las mascotas");
+            else
+            {
+                string cadena = "A ud. le gusta los ";
+                if (opPerros.Checked)
+                    cadena=cadena + "perros ";
+                if (opGatos.Checked)
+                    cadena= cadena+"gatos ";
+                if (opAves.Checked)
+                    cadena+="aves ";
+                if (opPezcado.Checked)
+                    cadena+="pezcados";
+                MessageBox.Show(cadena);
+            }
+        }
     }
 }
