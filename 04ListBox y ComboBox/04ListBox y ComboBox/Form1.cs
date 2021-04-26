@@ -16,5 +16,11 @@ namespace _04ListBox_y_ComboBox
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lstDepartamentos.SelectedItem = "POTOSI";
+            cmbDepartamentos.SelectedIndex = 3;
+        }
     }
 }

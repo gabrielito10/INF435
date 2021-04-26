@@ -28,13 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lstDepartamentos = new System.Windows.Forms.ListBox();
+            this.cmbDepartamentos = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // lstDepartamentos
+            // 
+            this.lstDepartamentos.FormattingEnabled = true;
+            this.lstDepartamentos.Items.AddRange(new object[] {
+            "LA PAZ",
+            "COCHABAMBA",
+            "SANTA CRUZ",
+            "POTOSI",
+            "ORURO",
+            "CHUQUISACA",
+            "TARIJA",
+            "BENI",
+            "PANDO"});
+            this.lstDepartamentos.Location = new System.Drawing.Point(54, 45);
+            this.lstDepartamentos.Name = "lstDepartamentos";
+            this.lstDepartamentos.Size = new System.Drawing.Size(120, 69);
+            this.lstDepartamentos.TabIndex = 0;
+            // 
+            // cmbDepartamentos
+            // 
+            this.cmbDepartamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepartamentos.FormattingEnabled = true;
+            this.cmbDepartamentos.Items.AddRange(new object[] {
+            "LA PAZ",
+            "COCHABAMBA",
+            "SANTA CRUZ",
+            "POTOSI",
+            "ORURO",
+            "CHUQUISACA",
+            "TARIJA",
+            "BENI",
+            "PANDO"});
+            this.cmbDepartamentos.Location = new System.Drawing.Point(243, 45);
+            this.cmbDepartamentos.Name = "cmbDepartamentos";
+            this.cmbDepartamentos.Size = new System.Drawing.Size(121, 21);
+            this.cmbDepartamentos.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(436, 244);
+            this.Controls.Add(this.cmbDepartamentos);
+            this.Controls.Add(this.lstDepartamentos);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lstDepartamentos;
+        private System.Windows.Forms.ComboBox cmbDepartamentos;
     }
 }
 
