@@ -22,5 +22,15 @@ namespace _04ListBox_y_ComboBox
             lstDepartamentos.SelectedItem = "POTOSI";
             cmbDepartamentos.SelectedIndex = 3;
         }
+
+        private void btnListBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("BUENAS TARDES " + lstDepartamentos.SelectedItem);
+        }
+
+        private void btnComboBox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("BUENAS TARDES " + cmbDepartamentos.SelectedItem);
+        }
     }
 }

@@ -30,6 +30,8 @@
         {
             this.lstDepartamentos = new System.Windows.Forms.ListBox();
             this.cmbDepartamentos = new System.Windows.Forms.ComboBox();
+            this.btnListBox = new System.Windows.Forms.Button();
+            this.btnComboBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstDepartamentos
@@ -69,11 +71,33 @@
             this.cmbDepartamentos.Size = new System.Drawing.Size(121, 21);
             this.cmbDepartamentos.TabIndex = 1;
             // 
+            // btnListBox
+            // 
+            this.btnListBox.Location = new System.Drawing.Point(54, 160);
+            this.btnListBox.Name = "btnListBox";
+            this.btnListBox.Size = new System.Drawing.Size(120, 40);
+            this.btnListBox.TabIndex = 2;
+            this.btnListBox.Text = "Mostrar ListBox";
+            this.btnListBox.UseVisualStyleBackColor = true;
+            this.btnListBox.Click += new System.EventHandler(this.btnListBox_Click);
+            // 
+            // btnComboBox
+            // 
+            this.btnComboBox.Location = new System.Drawing.Point(244, 160);
+            this.btnComboBox.Name = "btnComboBox";
+            this.btnComboBox.Size = new System.Drawing.Size(120, 40);
+            this.btnComboBox.TabIndex = 3;
+            this.btnComboBox.Text = "Mostrar ComboBox";
+            this.btnComboBox.UseVisualStyleBackColor = true;
+            this.btnComboBox.Click += new System.EventHandler(this.btnComboBox_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 244);
+            this.Controls.Add(this.btnComboBox);
+            this.Controls.Add(this.btnListBox);
             this.Controls.Add(this.cmbDepartamentos);
             this.Controls.Add(this.lstDepartamentos);
             this.Name = "Form1";
@@ -88,6 +112,8 @@
 
         private System.Windows.Forms.ListBox lstDepartamentos;
         private System.Windows.Forms.ComboBox cmbDepartamentos;
+        private System.Windows.Forms.Button btnListBox;
+        private System.Windows.Forms.Button btnComboBox;
     }
 }
 
