@@ -16,5 +16,13 @@ namespace _10PruebaExamen
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(lstUno.SelectedItem.ToString());
+            int num2 = int.Parse(lstDos.SelectedItem.ToString());
+            int res = num1 + num2;
+            MessageBox.Show(res.ToString());
+        }
     }
 }
