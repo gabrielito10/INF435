@@ -44,5 +44,14 @@ namespace _05Navegador_Fecha
                 Navegador.Navigate(txtUrl.Text);
             }
         }
+
+        private void btnFecha_Click(object sender, EventArgs e)
+        {
+            //mandando texto tal y como se ve
+            //MessageBox.Show(dateTimePicker1.Text);
+
+            //mandando texto como entiende cualquier gestor de BD
+            MessageBox.Show(dateTimePicker1.Value.ToString());
+        }
     }
 }

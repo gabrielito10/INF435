@@ -28,20 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Navegador = new System.Windows.Forms.WebBrowser();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnAdelante = new System.Windows.Forms.Button();
             this.bntActualizar = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
+            this.Navegador = new System.Windows.Forms.WebBrowser();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnFecha = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Navegador
-            // 
-            this.Navegador.Location = new System.Drawing.Point(12, 61);
-            this.Navegador.MinimumSize = new System.Drawing.Size(20, 20);
-            this.Navegador.Name = "Navegador";
-            this.Navegador.Size = new System.Drawing.Size(776, 399);
-            this.Navegador.TabIndex = 0;
             // 
             // btnAtras
             // 
@@ -81,16 +75,43 @@
             this.txtUrl.TabIndex = 4;
             this.txtUrl.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtUrl_KeyUp);
             // 
+            // Navegador
+            // 
+            this.Navegador.Location = new System.Drawing.Point(13, 51);
+            this.Navegador.MinimumSize = new System.Drawing.Size(20, 20);
+            this.Navegador.Name = "Navegador";
+            this.Navegador.Size = new System.Drawing.Size(767, 407);
+            this.Navegador.TabIndex = 5;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(36, 481);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 6;
+            // 
+            // btnFecha
+            // 
+            this.btnFecha.Location = new System.Drawing.Point(295, 481);
+            this.btnFecha.Name = "btnFecha";
+            this.btnFecha.Size = new System.Drawing.Size(140, 23);
+            this.btnFecha.TabIndex = 7;
+            this.btnFecha.Text = "MOSTRAR FECHA";
+            this.btnFecha.UseVisualStyleBackColor = true;
+            this.btnFecha.Click += new System.EventHandler(this.btnFecha_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 521);
+            this.Controls.Add(this.btnFecha);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Navegador);
             this.Controls.Add(this.txtUrl);
             this.Controls.Add(this.bntActualizar);
             this.Controls.Add(this.btnAdelante);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.Navegador);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -101,12 +122,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.WebBrowser Navegador;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnAdelante;
         private System.Windows.Forms.Button bntActualizar;
         private System.Windows.Forms.TextBox txtUrl;
+        private System.Windows.Forms.WebBrowser Navegador;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnFecha;
     }
 }
 
