@@ -16,5 +16,25 @@ namespace _07Practica
         {
             InitializeComponent();
         }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            int N = int.Parse(txtN.Text);
+            int serie = 0;
+            string textoSalir = serie.ToString();
+            for (int i=1; i<=N; i++)
+            {
+                if (i%2 != 0 ) // es impar
+                {
+                    serie += 2;
+                }
+                else // es par
+                {
+                    serie *= 2;
+                }
+                textoSalir += " " + serie.ToString();
+            }
+            lblSerie.Text = textoSalir;
+        }
     }
 }
