@@ -16,5 +16,10 @@ namespace _01VentanaEmergente
         {
             InitializeComponent();
         }
+
+        private void miBotoncito_Click(object sender, EventArgs e)
+        {
+            //aqui va al codigo del boton
+        }
     }
 }
