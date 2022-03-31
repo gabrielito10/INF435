@@ -35,7 +35,6 @@ namespace _02Textbox_y_Labels
                 b = suma;
             }
             lblResultado.Text = "La serie es: " + resultado;
-            lblResultado.Location = new Point(50, 200);
         }
     }
 }

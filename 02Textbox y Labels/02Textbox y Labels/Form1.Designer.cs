@@ -69,7 +69,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(150, 200);
+            this.lblResultado.Location = new System.Drawing.Point(24, 205);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(121, 13);
             this.lblResultado.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 281);
+            this.ClientSize = new System.Drawing.Size(434, 313);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtValorN);
