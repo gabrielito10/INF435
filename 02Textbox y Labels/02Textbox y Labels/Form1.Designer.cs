@@ -58,7 +58,7 @@
             // 
             this.btnGenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerar.ForeColor = System.Drawing.Color.Navy;
-            this.btnGenerar.Location = new System.Drawing.Point(161, 122);
+            this.btnGenerar.Location = new System.Drawing.Point(147, 120);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(132, 45);
             this.btnGenerar.TabIndex = 2;
@@ -69,7 +69,7 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(127, 209);
+            this.lblResultado.Location = new System.Drawing.Point(150, 200);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(121, 13);
             this.lblResultado.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 249);
+            this.ClientSize = new System.Drawing.Size(434, 281);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnGenerar);
             this.Controls.Add(this.txtValorN);
