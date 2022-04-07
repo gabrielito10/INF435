@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _03CheckBox_y_RadioButton
+namespace _03RadioButton_y_CheckBox
 {
     static class Program
     {

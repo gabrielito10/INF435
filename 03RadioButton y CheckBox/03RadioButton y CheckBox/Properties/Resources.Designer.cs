@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _03CheckBox_y_RadioButton.Properties
+namespace _03RadioButton_y_CheckBox.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace _03CheckBox_y_RadioButton.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_03CheckBox_y_RadioButton.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_03RadioButton_y_CheckBox.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

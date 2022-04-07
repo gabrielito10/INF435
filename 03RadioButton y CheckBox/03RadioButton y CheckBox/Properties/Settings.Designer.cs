@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _03CheckBox_y_RadioButton.Properties
+namespace _03RadioButton_y_CheckBox.Properties
 {
 
 

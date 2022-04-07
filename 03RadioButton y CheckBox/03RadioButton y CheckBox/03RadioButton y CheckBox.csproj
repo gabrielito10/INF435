@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{861FED1A-AFDE-45F8-B5EA-9CFC4B73555F}</ProjectGuid>
+    <ProjectGuid>{B5C53068-4EFB-47C3-BD0F-CF7C31BE9B32}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_03CheckBox_y_RadioButton</RootNamespace>
-    <AssemblyName>03CheckBox y RadioButton</AssemblyName>
+    <RootNamespace>_03RadioButton_y_CheckBox</RootNamespace>
+    <AssemblyName>03RadioButton y CheckBox</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

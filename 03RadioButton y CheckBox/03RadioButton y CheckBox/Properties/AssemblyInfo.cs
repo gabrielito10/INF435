@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("03CheckBox y RadioButton")]
+[assembly: AssemblyTitle("03RadioButton y CheckBox")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("03CheckBox y RadioButton")]
+[assembly: AssemblyProduct("03RadioButton y CheckBox")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("861fed1a-afde-45f8-b5ea-9cfc4b73555f")]
+[assembly: Guid("b5c53068-4efb-47c3-bd0f-cf7c31be9b32")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
