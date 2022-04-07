@@ -36,5 +36,39 @@ namespace _03RadioButton_y_CheckBox
                 MessageBox.Show("Ud. es Viudo");
             }
         }
+
+        private void btnDeporte_Click(object sender, EventArgs e)
+        {
+            if (chkFutbol.Checked == false && 
+                chkBasquet.Checked == false &&
+                chkVolibol.Checked == false &&
+                chkRaquet.Checked == false)
+            {
+                //Ninguno fue seleccionado
+                MessageBox.Show("A ud. no le gusta nada");
+            }
+            else
+            {
+                //Al menos uno fue seleccionado
+                string mensaje = "A ud le gusta el ";
+                if (chkFutbol.Checked == true)
+                {
+                    mensaje = mensaje + chkFutbol.Text + " ";
+                }
+                if (chkBasquet.Checked == true)
+                {
+                    mensaje += "Basquet ";
+                }
+                if (chkVolibol.Checked)
+                {
+                    mensaje += "Volibol ";
+                }
+                if (chkRaquet.Checked)
+                {
+                    mensaje += "Raquet";
+                }
+                MessageBox.Show(mensaje);
+            }
+        }
     }
 }

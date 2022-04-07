@@ -32,11 +32,12 @@
             this.rbtCasado = new System.Windows.Forms.RadioButton();
             this.rbtDivorciado = new System.Windows.Forms.RadioButton();
             this.rbtViudo = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chkFutbol = new System.Windows.Forms.CheckBox();
+            this.chkBasquet = new System.Windows.Forms.CheckBox();
+            this.chkVolibol = new System.Windows.Forms.CheckBox();
+            this.chkRaquet = new System.Windows.Forms.CheckBox();
             this.btnEstado = new System.Windows.Forms.Button();
+            this.btnDeporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rbtSoltero
@@ -83,45 +84,45 @@
             this.rbtViudo.Text = "VIUDO";
             this.rbtViudo.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkFutbol
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(230, 30);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(68, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "FUTBOL";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkFutbol.AutoSize = true;
+            this.chkFutbol.Location = new System.Drawing.Point(230, 30);
+            this.chkFutbol.Name = "chkFutbol";
+            this.chkFutbol.Size = new System.Drawing.Size(76, 17);
+            this.chkFutbol.TabIndex = 4;
+            this.chkFutbol.Text = "CICLISMO";
+            this.chkFutbol.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkBasquet
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(230, 66);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(77, 17);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "BASQUET";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkBasquet.AutoSize = true;
+            this.chkBasquet.Location = new System.Drawing.Point(230, 66);
+            this.chkBasquet.Name = "chkBasquet";
+            this.chkBasquet.Size = new System.Drawing.Size(77, 17);
+            this.chkBasquet.TabIndex = 5;
+            this.chkBasquet.Text = "BASQUET";
+            this.chkBasquet.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkVolibol
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(230, 102);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 17);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "VOLIBOL";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkVolibol.AutoSize = true;
+            this.chkVolibol.Location = new System.Drawing.Point(230, 102);
+            this.chkVolibol.Name = "chkVolibol";
+            this.chkVolibol.Size = new System.Drawing.Size(71, 17);
+            this.chkVolibol.TabIndex = 6;
+            this.chkVolibol.Text = "VOLIBOL";
+            this.chkVolibol.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkRaquet
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(230, 138);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(71, 17);
-            this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "RAQUET";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkRaquet.AutoSize = true;
+            this.chkRaquet.Location = new System.Drawing.Point(230, 138);
+            this.chkRaquet.Name = "chkRaquet";
+            this.chkRaquet.Size = new System.Drawing.Size(71, 17);
+            this.chkRaquet.TabIndex = 7;
+            this.chkRaquet.Text = "RAQUET";
+            this.chkRaquet.UseVisualStyleBackColor = true;
             // 
             // btnEstado
             // 
@@ -136,16 +137,30 @@
             this.btnEstado.UseVisualStyleBackColor = false;
             this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
+            // btnDeporte
+            // 
+            this.btnDeporte.BackColor = System.Drawing.Color.Navy;
+            this.btnDeporte.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeporte.Location = new System.Drawing.Point(213, 202);
+            this.btnDeporte.Name = "btnDeporte";
+            this.btnDeporte.Size = new System.Drawing.Size(158, 40);
+            this.btnDeporte.TabIndex = 9;
+            this.btnDeporte.Text = "Mostrar Desporte";
+            this.btnDeporte.UseVisualStyleBackColor = false;
+            this.btnDeporte.Click += new System.EventHandler(this.btnDeporte_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 243);
+            this.Controls.Add(this.btnDeporte);
             this.Controls.Add(this.btnEstado);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkRaquet);
+            this.Controls.Add(this.chkVolibol);
+            this.Controls.Add(this.chkBasquet);
+            this.Controls.Add(this.chkFutbol);
             this.Controls.Add(this.rbtViudo);
             this.Controls.Add(this.rbtDivorciado);
             this.Controls.Add(this.rbtCasado);
@@ -163,11 +178,12 @@
         private System.Windows.Forms.RadioButton rbtCasado;
         private System.Windows.Forms.RadioButton rbtDivorciado;
         private System.Windows.Forms.RadioButton rbtViudo;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chkFutbol;
+        private System.Windows.Forms.CheckBox chkBasquet;
+        private System.Windows.Forms.CheckBox chkVolibol;
+        private System.Windows.Forms.CheckBox chkRaquet;
         private System.Windows.Forms.Button btnEstado;
+        private System.Windows.Forms.Button btnDeporte;
     }
 }
 
