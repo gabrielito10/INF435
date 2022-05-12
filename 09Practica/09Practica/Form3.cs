@@ -16,5 +16,14 @@ namespace _09Practica
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int resultado = 0;
+            int a = int.Parse(lstUno.SelectedItem.ToString());
+            int b = int.Parse(lstDos.SelectedItem.ToString());
+            resultado = a + b;
+            MessageBox.Show(resultado.ToString());
+        }
     }
 }
