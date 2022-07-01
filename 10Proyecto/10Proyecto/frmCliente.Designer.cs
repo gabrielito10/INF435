@@ -29,9 +29,19 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.cmdNuevo = new System.Windows.Forms.ToolStripButton();
+            this.cmdEditar = new System.Windows.Forms.ToolStripButton();
+            this.cmdEliminar = new System.Windows.Forms.ToolStripButton();
+            this.cmdGuardar = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cmdPrimer = new System.Windows.Forms.ToolStripButton();
+            this.cmdAnterior = new System.Windows.Forms.ToolStripButton();
             this.lblRegistro = new System.Windows.Forms.ToolStripLabel();
+            this.cmdSiguinte = new System.Windows.Forms.ToolStripButton();
+            this.cmdUltimo = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cmdCancelar = new System.Windows.Forms.ToolStripButton();
+            this.cmdImprimir = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCI = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -46,16 +56,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cmbDepartamentos = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cmdNuevo = new System.Windows.Forms.ToolStripButton();
-            this.cmdEditar = new System.Windows.Forms.ToolStripButton();
-            this.cmdEliminar = new System.Windows.Forms.ToolStripButton();
-            this.cmdGuardar = new System.Windows.Forms.ToolStripButton();
-            this.cmdPrimer = new System.Windows.Forms.ToolStripButton();
-            this.cmdAnterior = new System.Windows.Forms.ToolStripButton();
-            this.cmdSiguinte = new System.Windows.Forms.ToolStripButton();
-            this.cmdUltimo = new System.Windows.Forms.ToolStripButton();
-            this.cmdCancelar = new System.Windows.Forms.ToolStripButton();
-            this.cmdImprimir = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -83,10 +83,66 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // cmdNuevo
+            // 
+            this.cmdNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdNuevo.Image = global::_10Proyecto.Properties.Resources.imgNuevo;
+            this.cmdNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdNuevo.Name = "cmdNuevo";
+            this.cmdNuevo.Size = new System.Drawing.Size(28, 28);
+            this.cmdNuevo.Text = "NUEVO";
+            // 
+            // cmdEditar
+            // 
+            this.cmdEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdEditar.Image = global::_10Proyecto.Properties.Resources.imgEditar;
+            this.cmdEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdEditar.Name = "cmdEditar";
+            this.cmdEditar.Size = new System.Drawing.Size(28, 28);
+            this.cmdEditar.Text = "EDITAR";
+            // 
+            // cmdEliminar
+            // 
+            this.cmdEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdEliminar.Image = global::_10Proyecto.Properties.Resources.imgEliminar;
+            this.cmdEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdEliminar.Name = "cmdEliminar";
+            this.cmdEliminar.Size = new System.Drawing.Size(28, 28);
+            this.cmdEliminar.Text = "ELIMINAR";
+            // 
+            // cmdGuardar
+            // 
+            this.cmdGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdGuardar.Image = global::_10Proyecto.Properties.Resources.imgGuardar;
+            this.cmdGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdGuardar.Name = "cmdGuardar";
+            this.cmdGuardar.Size = new System.Drawing.Size(28, 28);
+            this.cmdGuardar.Text = "GUARDAR";
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // cmdPrimer
+            // 
+            this.cmdPrimer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdPrimer.Image = global::_10Proyecto.Properties.Resources.imgPrimero;
+            this.cmdPrimer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdPrimer.Name = "cmdPrimer";
+            this.cmdPrimer.Size = new System.Drawing.Size(28, 28);
+            this.cmdPrimer.Text = "PRIMER REGISTRO";
+            this.cmdPrimer.Click += new System.EventHandler(this.cmdPrimer_Click);
+            // 
+            // cmdAnterior
+            // 
+            this.cmdAnterior.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdAnterior.Image = global::_10Proyecto.Properties.Resources.imgAnterior;
+            this.cmdAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdAnterior.Name = "cmdAnterior";
+            this.cmdAnterior.Size = new System.Drawing.Size(28, 28);
+            this.cmdAnterior.Text = "ANTERIOR REGISTRO";
+            this.cmdAnterior.Click += new System.EventHandler(this.cmdAnterior_Click);
             // 
             // lblRegistro
             // 
@@ -94,10 +150,48 @@
             this.lblRegistro.Size = new System.Drawing.Size(63, 28);
             this.lblRegistro.Text = "lblRegistro";
             // 
+            // cmdSiguinte
+            // 
+            this.cmdSiguinte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdSiguinte.Image = global::_10Proyecto.Properties.Resources.imgSiguiente;
+            this.cmdSiguinte.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdSiguinte.Name = "cmdSiguinte";
+            this.cmdSiguinte.Size = new System.Drawing.Size(28, 28);
+            this.cmdSiguinte.Text = "SIGUIENTE REGISTRO";
+            this.cmdSiguinte.Click += new System.EventHandler(this.cmdSiguinte_Click);
+            // 
+            // cmdUltimo
+            // 
+            this.cmdUltimo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdUltimo.Image = global::_10Proyecto.Properties.Resources.imgUltimo;
+            this.cmdUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdUltimo.Name = "cmdUltimo";
+            this.cmdUltimo.Size = new System.Drawing.Size(28, 28);
+            this.cmdUltimo.Text = "ULTIMO REGISTRO";
+            this.cmdUltimo.Click += new System.EventHandler(this.cmdUltimo_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // cmdCancelar
+            // 
+            this.cmdCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdCancelar.Image = global::_10Proyecto.Properties.Resources.imgCancelar;
+            this.cmdCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(28, 28);
+            this.cmdCancelar.Text = "CANCELAR";
+            // 
+            // cmdImprimir
+            // 
+            this.cmdImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmdImprimir.Image = global::_10Proyecto.Properties.Resources.imgImprimir;
+            this.cmdImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmdImprimir.Name = "cmdImprimir";
+            this.cmdImprimir.Size = new System.Drawing.Size(28, 28);
+            this.cmdImprimir.Text = "IMPRIMIR";
             // 
             // label1
             // 
@@ -274,96 +368,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 162);
             this.dataGridView1.TabIndex = 14;
             // 
-            // cmdNuevo
-            // 
-            this.cmdNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdNuevo.Image = global::_10Proyecto.Properties.Resources.imgNuevo;
-            this.cmdNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdNuevo.Name = "cmdNuevo";
-            this.cmdNuevo.Size = new System.Drawing.Size(28, 28);
-            this.cmdNuevo.Text = "NUEVO";
-            // 
-            // cmdEditar
-            // 
-            this.cmdEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdEditar.Image = global::_10Proyecto.Properties.Resources.imgEditar;
-            this.cmdEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdEditar.Name = "cmdEditar";
-            this.cmdEditar.Size = new System.Drawing.Size(28, 28);
-            this.cmdEditar.Text = "EDITAR";
-            // 
-            // cmdEliminar
-            // 
-            this.cmdEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdEliminar.Image = global::_10Proyecto.Properties.Resources.imgEliminar;
-            this.cmdEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdEliminar.Name = "cmdEliminar";
-            this.cmdEliminar.Size = new System.Drawing.Size(28, 28);
-            this.cmdEliminar.Text = "ELIMINAR";
-            // 
-            // cmdGuardar
-            // 
-            this.cmdGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdGuardar.Image = global::_10Proyecto.Properties.Resources.imgGuardar;
-            this.cmdGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdGuardar.Name = "cmdGuardar";
-            this.cmdGuardar.Size = new System.Drawing.Size(28, 28);
-            this.cmdGuardar.Text = "GUARDAR";
-            // 
-            // cmdPrimer
-            // 
-            this.cmdPrimer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdPrimer.Image = global::_10Proyecto.Properties.Resources.imgPrimero;
-            this.cmdPrimer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdPrimer.Name = "cmdPrimer";
-            this.cmdPrimer.Size = new System.Drawing.Size(28, 28);
-            this.cmdPrimer.Text = "PRIMER REGISTRO";
-            // 
-            // cmdAnterior
-            // 
-            this.cmdAnterior.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdAnterior.Image = global::_10Proyecto.Properties.Resources.imgAnterior;
-            this.cmdAnterior.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdAnterior.Name = "cmdAnterior";
-            this.cmdAnterior.Size = new System.Drawing.Size(28, 28);
-            this.cmdAnterior.Text = "ANTERIOR REGISTRO";
-            // 
-            // cmdSiguinte
-            // 
-            this.cmdSiguinte.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdSiguinte.Image = global::_10Proyecto.Properties.Resources.imgSiguiente;
-            this.cmdSiguinte.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdSiguinte.Name = "cmdSiguinte";
-            this.cmdSiguinte.Size = new System.Drawing.Size(28, 28);
-            this.cmdSiguinte.Text = "SIGUIENTE REGISTRO";
-            // 
-            // cmdUltimo
-            // 
-            this.cmdUltimo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdUltimo.Image = global::_10Proyecto.Properties.Resources.imgUltimo;
-            this.cmdUltimo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdUltimo.Name = "cmdUltimo";
-            this.cmdUltimo.Size = new System.Drawing.Size(28, 28);
-            this.cmdUltimo.Text = "ULTIMO REGISTRO";
-            // 
-            // cmdCancelar
-            // 
-            this.cmdCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdCancelar.Image = global::_10Proyecto.Properties.Resources.imgCancelar;
-            this.cmdCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(28, 28);
-            this.cmdCancelar.Text = "CANCELAR";
-            // 
-            // cmdImprimir
-            // 
-            this.cmdImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmdImprimir.Image = global::_10Proyecto.Properties.Resources.imgImprimir;
-            this.cmdImprimir.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmdImprimir.Name = "cmdImprimir";
-            this.cmdImprimir.Size = new System.Drawing.Size(28, 28);
-            this.cmdImprimir.Text = "IMPRIMIR";
-            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,6 +391,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "frmCliente";
             this.Text = "frmCliente";
+            this.Load += new System.EventHandler(this.frmCliente_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
