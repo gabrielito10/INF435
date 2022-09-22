@@ -16,5 +16,17 @@ namespace _09Practica
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtNum1.Text);
+            int b = int.Parse(txtNum2.Text);
+            int resultado = 0;
+            if (rbtSuma.Checked)
+                resultado = a + b;
+            if (rbtResta.Checked)
+                resultado = a - b;
+            MessageBox.Show("El resultado es: " + resultado);
+        }
     }
 }
