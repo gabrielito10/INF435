@@ -39,6 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbDepartamento = new System.Windows.Forms.ComboBox();
+            this.brnInsertar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,6 +82,7 @@
             // 
             // txtCi
             // 
+            this.txtCi.Enabled = false;
             this.txtCi.Location = new System.Drawing.Point(178, 87);
             this.txtCi.Name = "txtCi";
             this.txtCi.Size = new System.Drawing.Size(100, 20);
@@ -85,6 +90,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(178, 113);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(257, 20);
@@ -101,6 +107,7 @@
             // 
             // txtCelular
             // 
+            this.txtCelular.Enabled = false;
             this.txtCelular.Location = new System.Drawing.Point(178, 139);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(100, 20);
@@ -127,6 +134,7 @@
             // cmbDepartamento
             // 
             this.cmbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepartamento.Enabled = false;
             this.cmbDepartamento.FormattingEnabled = true;
             this.cmbDepartamento.Items.AddRange(new object[] {
             "LA PAZ",
@@ -143,11 +151,55 @@
             this.cmbDepartamento.Size = new System.Drawing.Size(98, 21);
             this.cmbDepartamento.TabIndex = 10;
             // 
+            // brnInsertar
+            // 
+            this.brnInsertar.Location = new System.Drawing.Point(47, 227);
+            this.brnInsertar.Name = "brnInsertar";
+            this.brnInsertar.Size = new System.Drawing.Size(115, 23);
+            this.brnInsertar.TabIndex = 11;
+            this.brnInsertar.Text = "INSERTAR";
+            this.brnInsertar.UseVisualStyleBackColor = true;
+            this.brnInsertar.Click += new System.EventHandler(this.brnInsertar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(168, 227);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(115, 23);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "MODIFICAR";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(289, 227);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(115, 23);
+            this.btnGrabar.TabIndex = 13;
+            this.btnGrabar.Text = "GRABAR";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(410, 227);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(115, 23);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 312);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnGrabar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.brnInsertar);
             this.Controls.Add(this.cmbDepartamento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCelular);
@@ -179,6 +231,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbDepartamento;
+        private System.Windows.Forms.Button brnInsertar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnGrabar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
 
